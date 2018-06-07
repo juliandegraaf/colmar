@@ -1,0 +1,82 @@
+/* Styles */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto Slab", "Georgia", serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.container{
+  display: flex;
+  margin: 0;
+}
+
+/* Header */
+
+.headerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.4rem;
+  border-bottom: 0.1rem dotted #7d2d91;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2.4rem;
+}
+
+.logo img {
+  height: 5.5rem;
+}
+
+.colmar {
+  font-size: 2.5rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #000;
+}
+
+.academy {
+  color: #7d2d91;
+  font-size: 2.5rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.navigation {
+  display: inline-flex;
+}
+
+.navigation span {
+  font-family: 'Roboto Slab', serif;
+  margin: 1.6rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #373737;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: #7d2d91;
+}
+
+/* (Bruce) Banner */

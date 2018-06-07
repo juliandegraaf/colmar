@@ -5,7 +5,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 2rem;
   font-weight: 300;
+    line-height: 4rem;
 }
 
 h1, h2, h3, h4, h5 {
@@ -13,7 +15,10 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  line-height: 5rem;
 }
 
 h2 {
@@ -32,7 +37,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 6.4rem;
-  border-bottom: 0.1rem dotted #7d2d91;
+  border-bottom: 0rem dotted #7d2d91;
 }
 
 .logo {
@@ -70,7 +75,7 @@ h2 {
 
 .navigation a {
   text-decoration: none;
-  color: #373737;
+  color: #000;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -80,3 +85,49 @@ h2 {
 }
 
 /* (Bruce) Banner */
+
+.mainbanner {
+  background: linear-gradient(to right, #7d2d91, #9e2d91);
+}
+
+.mainbanner h1 {
+  color: white;
+}
+
+.mainbanner img {
+  margin: 32px 50px 32px 24px;
+  max-width: 60%;
+}
+
+.mainbanner p {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+
+.btn {
+  background-color: #6cbe39;
+  color: #fff;
+  width: 23rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: ease-out 400ms;
+}

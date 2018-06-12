@@ -291,6 +291,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 3.2rem;
 }
 
 .course {
@@ -330,4 +331,134 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+
+
+/* Thesis information */
+
+.thesis-information {
+display: flex;
+flex-direction: row;
+background: #fff;
+}
+
+.thesis-main-head {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin: 3.2rem 2.4rem;
+}
+
+#thesis-title {
+font-family: 'Roboto Slab', serif;
+font-weight: 500;
+font-size: 4rem;
+color: #000;
+text-align: center;
+padding: 3.2rem;
+margin: 0px;
+}
+
+.thesis-main-head span {
+font-family: 'Roboto', serif;
+font-weight: 500;
+font-size: 1.5rem;
+color: grey;
+margin: 0;
+padding-bottom: 3.2rem;
+}
+
+.thesis-main-head video {
+width: 100%;
+padding-bottom: 3.2rem;
+}
+
+
+/* Thesis more information */
+
+.thesis-other-info {
+flex-direction: column;
+margin: 32px 0;
+width: 40%;
+display: flex;
+border-left: 0.2rem dotted #7d2d91;
+}
+
+.thesis-info-box {
+display: flex;
+border-bottom: 0.1rem solid #efefef;
+}
+
+.thesis-info-img {
+padding: 1.6rem;
+}
+
+.thesis-info-img img {
+width: 15rem;
+}
+
+.thesis-info-box:nth-child(2n+0) {
+background-color: #efefef;
+}
+
+.thesis-textbox {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.thesis-textbox h3 {
+font-size: 2.4rem;
+font-weight: 400;
+color: #000;
+margin-bottom: 0.8rem;
+}
+
+.thesis-textbox span {
+font-size: 1.6rem;
+line-height: 2rem;
+margin-bottom: 0.8rem;
+color: #000;
+}
+
+.thesis-more-link {
+color: #000;
+font-weight: 500;
+}
+
+.thesis-more-link:hover {
+color: #7d2d91;
+font-weight: 500;
+text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #000;
+  height: 10rem;
+  align-items: center;
+}
+
+.footer-note {
+  color: #fff;
+  font-weight: 400;
+  margin-left: 2.4rem;
+  top: 1.6rem;
+}
+
+.footer-items {
+  text-align: right;
+  margin-right: 2.4rem;
+  color: #fff;
+  top: 1.6rem;
+}
+
+.footer-items span {
+  margin-left: 2rem;
 }

@@ -94,19 +94,20 @@ h2 {
   display: none;
 }
 
-@media only screen and (max-width: 768px ) {
-.logo-mobile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 6.4rem;
-}
+@media only screen and (max-width: 768px) {
 
-.headerbar {
-  display: none;
-}
-}
+  .logo-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 6.4rem;
+  }
+
+  .headerbar {
+    display: none;
+  }
+  }
 
 
     /* Banner */
@@ -117,16 +118,19 @@ h2 {
 
 .mainbanner h1 {
   color: white;
+  margin-right: 1rem;
 }
 
 .mainbanner img {
   margin: 32px 50px 32px 24px;
-  max-width: 60%;
+  width: 60%;
+  height: 100%;
 }
 
 .mainbanner p {
   color: white;
   font-size: 2.5rem;
+  margin-right: 1rem;
   font-weight: 300;
 }
 
@@ -159,7 +163,9 @@ h2 {
   border-bottom: 0.5rem solid #efefef;
 }
 
+
     /* The Academy information */
+
 .information {
   display: flex;
   flex-direction: row;
@@ -178,8 +184,80 @@ h2 {
 }
 
 .head-info img {
-  width: 100%;
+  width: 60%;
+  height: 100%;
   padding-bottom: 3.2rem;
+}
+
+.mainbanner-mobile {
+  display: none;
+}
+
+
+  /* The Academy information mobile */
+@media only screen and (max-width: 900px){
+
+  .mainbanner {
+    display: none;
+  }
+
+  .mainbanner-mobile {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #7d2d91, #9e2d91);
+  }
+
+  .mainbanner-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bannertext-mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .bannertext-mobile h1 {
+    margin-top: 3.2rem;
+    padding-left: 2rem;
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  .bannertext-mobile h3 {
+    margin-top: .5rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .btn-mobile {
+    display: block;
+    background-color: #6cbe39;
+    color: #fff;
+    width: 22rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 2.4rem;
+    margin-left: 2rem;
+    margin-bottom: 3.2rem;
+    border-bottom: 0.5rem solid green;
+    padding-top: 1rem;
+  }
+
+  .btn-mobile:hover {
+    background-color: #fff;
+    color: #000;
+    transition: ease-out 400ms;
+    border-bottom: 0.5rem solid #efefef;
+  }
 }
 
 
@@ -271,6 +349,54 @@ h2 {
 }
 
 
+      /* Mobile more information */
+
+.info-box-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main-head {
+      display: none;
+    }
+
+    .other-info {
+      display: none;
+    }
+
+    .info-box-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.6rem 1.6rem 0 1.6rem;
+      margin-bottom: 4rem;
+    }
+
+    .textbox-mobile h3 {
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #000;
+    }
+
+    .textbox-mobile h5 {
+      padding-bottom: 1rem;
+      color: #373737;
+      font-size: 1.15rem;
+    }
+
+    .info-img-mobile img {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .textbox-mobile {
+      padding-top: 3rem;
+    }
+  }
+
+
     /* Courses */
 
 .courses {
@@ -335,12 +461,63 @@ h2 {
 
 
 
+  /* Courses mobile */
+
+  .courses-mobile {
+    display: none;
+  }
+
+@media only screen and (max-width: 680px){
+  .courses {
+    display: none;
+  }
+
+  .courses-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(to right, #9e2d91, #7d2d91);
+    padding-bottom: 3.2rem;
+  }
+
+  .course-text-mobile h2 {
+    font-size: 3rem;
+  }
+
+  .course-text-mobile {
+    background-color: #efefef;
+    padding-top: 2rem;
+    margin-bottom: 0.8rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    text-align: left;
+    padding-left: 1.6rem;
+  }
+
+  }
+
 /* Thesis information */
 
 .thesis-information {
-display: flex;
-flex-direction: row;
 background: #fff;
+text-align: center;
+padding-top: 3.2rem;
+}
+
+.thesis-content {
+  display: flex;
+  text-align: left;
+  padding-bottom: 3.2rem;
+}
+
+.thesis-content h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.thesis-content p {
+
 }
 
 .thesis-main-head {
@@ -379,9 +556,9 @@ padding-bottom: 3.2rem;
 
 .thesis-other-info {
 flex-direction: column;
-margin: 32px 0;
 width: 40%;
 display: flex;
+margin: 3.2rem 0;
 border-left: 0.2rem dotted #7d2d91;
 }
 
@@ -398,7 +575,7 @@ padding: 1.6rem;
 width: 15rem;
 }
 
-.thesis-info-box:nth-child(2n+0) {
+.thesis-info-box:nth-child(2n+1) {
 background-color: #efefef;
 }
 
@@ -412,7 +589,7 @@ justify-content: center;
 font-size: 2.4rem;
 font-weight: 400;
 color: #000;
-margin-bottom: 0.8rem;
+: 0.8rem;
 }
 
 .thesis-textbox span {
@@ -432,6 +609,38 @@ color: #7d2d91;
 font-weight: 500;
 text-decoration: underline;
 }
+
+
+/* Thesis mobile */
+    .thesis-exhibit-mobile {
+      display: none;
+    }
+
+@media only screen and (max-width: 768px){
+    .thesis-information {
+    display: none;
+  }
+
+    .thesis-other-info {
+      display: none
+    }
+
+    .thesis-exhibit-mobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    }
+
+    .thesis-exhibit-mobile h2 {
+      text-align: center;
+      padding-bottom: 1.6rem;
+    }
+
+    .thesis-video-mobile video {
+      width: 100%;
+    }
+  }
 
 
 /* Footer */
@@ -461,4 +670,12 @@ footer {
 
 .footer-items span {
   margin-left: 2rem;
+}
+
+/* Mobile footer */
+
+@media only screen and (max-width: 680px){
+    .footer-items {
+      display: none;
+  }
 }
